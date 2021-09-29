@@ -10,19 +10,6 @@ body{
     width: 100%;
     margin: auto;
 }
-/* nav{
-    text-align: center;
-    background-color: orangered;
-    height: 50px;
-}
-a{
-    text-decoration: none;
-    line-height: 50px;
-    margin: 0px 30px 0px 30px;
-    font-weight: bold;
-    color: white;
-} */
-
 .ligne{
     height: 3px;
     width: 95%;
@@ -85,9 +72,6 @@ p{
 nav{
     text-align: center;
     background-color: black;
-    /* height: 50px;
-    margin: 10px;
-    border-radius: 20px; */
     height: 51px;
 }
 a{
@@ -100,7 +84,6 @@ a{
 }
 a:hover{
     background: black;
-    /* border-radius: 10px; */
 }
 .formulaire{
     width: 50%;
@@ -117,8 +100,31 @@ body{
 i{
     margin-right: 10px;
 }
-
-/* ************************************************************** */
+.equipe {
+    position: relative;
+    padding: 15px 38px 15px 38px;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color:  rgb(87, 196, 105);
+    min-width: 119px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 24px;
+    color: black;
+    left: 0px;
+    top: 52px;
+}
+.equipe:hover .content {
+    display: block;
+}
+.equipe:hover{
+    background-color: rgb(34, 31, 29);
+}
+span{
+    cursor: pointer;
+}
+/* ************************media************************************** */
 @media screen and (max-device-width :960px) {
     p {
         display: block;
@@ -181,9 +187,8 @@ i{
         background: #f1f1f1;
         border-radius: 5px;
     }
-    
 }
-/* ************************************************************************** */
+/* ***********************************media*************************************** */
 @media screen and (max-device-width: 500px){
 a {
     font-size:  10px;
@@ -192,33 +197,38 @@ a {
 p{
     font-size: 10xp;
 }
+footer img {
+    width: 26px;
+    /* margin: 0px 20px 0px 20px; */
+    border-radius: 50px;
+    margin-top: 8px;
 }
-/* ****************************************************************** */
-.equipe {
-    position: relative;
-    /* display: inline-block; */
-    padding: 15px 38px 15px 38px;
 }
-.content {
-    display: none;
-    position: absolute;
-    background-color:  rgb(87, 196, 105);
-    min-width: 119px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 24px;
-    color: black;
-    /* border-radius: 2px; */
-    left: 0px;
-    top: 52px;
-    /* margin-left: 186px; */
-}
-.equipe:hover .content {
-    display: block;
-}
-.equipe:hover{
-    background-color: rgb(34, 31, 29);
-    /* border-radius: 20px; */
-}
-span{
-    cursor: pointer;
-}
+
+/* ***********************************media*************************************** */
+@media screen and (max-device-width: 350px){
+    a {
+        font-size:  10px;
+        padding: 10px;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        font-size: 12px;
+    }
+    img{
+        width: 190px;
+        float: left;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 12px;
+    }
+    footer img {
+        width: 26px;
+        border-radius: 50px;
+        margin-top: 8px;
+    }
+    }
